@@ -4,12 +4,12 @@ from telegram.ext import Application, CommandHandler, CallbackContext
 from telegram.error import BadRequest
 
 # 🚀 Replace with your details
-TOKEN = "7407275275:AAF_mCXo3sN4TSCEdH6UEUW-np3yV_TW8vE"
+TOKEN = "token"
 PAY_PER_REFERRAL = 1  # ₹1 per subscriber
 PRICE_PLANS = {500: 2, 1000: 1.8, 5000: 1.5}  # Custom pricing per subscriber count
 MIN_WITHDRAWAL = 50  # Minimum withdrawal for users
-ADMIN_ID = "901003247"
-UPI_ID = "7408655629@upi"
+ADMIN_ID = "admin id"
+UPI_ID = "bank@upi"
 
 # 📌 Initialize database
 conn = sqlite3.connect("referrals.db", check_same_thread=False)
